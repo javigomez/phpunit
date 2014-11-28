@@ -174,6 +174,7 @@ abstract class PHPUnit_Framework_Assert
                 $needle,
                 $ignoreCase
             );
+            $constraint->evaluate($haystack);
         } else {
             throw PHPUnit_Util_InvalidArgumentHelper::factory(
                 2,
